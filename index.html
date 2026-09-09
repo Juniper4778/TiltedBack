@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilted Back | Official Website</title>
+  <meta name="description" content="Tilted Back — live music, band history, photos and videos.">
+  <meta property="og:title" content="Tilted Back">
+  <meta property="og:description" content="Tilted Back — live music, photos and videos.">
+  <meta property="og:type" content="website">
+  <link rel="preload" as="image" href="assets/tilted-back-live.jpg">
+  <style>
+    :root {
+      --bg:#080808;
+      --panel:#111111;
+      --text:#f2f2f2;
+      --muted:#aaa;
+      --accent:#d7a43a;
+      --line:#252525;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.6;
+    }
+    a { color:inherit; text-decoration:none; }
+    .nav {
+      position:fixed; top:0; left:0; right:0; z-index:10;
+      background:rgba(0,0,0,.82);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav-inner {
+      max-width:1100px; margin:auto; padding:15px 22px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .brand { font-weight:900; letter-spacing:4px; font-size:18px; }
+    .links { display:flex; gap:25px; font-size:13px; text-transform:uppercase; letter-spacing:1.5px; }
+    .links a:hover { color:var(--accent); }
+    .hero {
+      min-height:92vh;
+      display:flex; align-items:flex-end;
+      position:relative;
+      background:
+        linear-gradient(to top, rgba(0,0,0,.95) 0%, rgba(0,0,0,.35) 48%, rgba(0,0,0,.15) 100%),
+        url("assets/tilted-back-live.jpg") center center / cover no-repeat;
+    }
+    .hero-content {
+      width:100%; max-width:1100px; margin:auto;
+      padding:150px 22px 65px;
+    }
+    .eyebrow {
+      color:var(--accent); text-transform:uppercase; letter-spacing:4px;
+      font-size:12px; font-weight:bold; margin-bottom:8px;
+    }
+    h1 {
+      margin:0;
+      font-size:clamp(58px, 12vw, 140px);
+      line-height:.82;
+      letter-spacing:-5px;
+      font-weight:900;
+      text-transform:uppercase;
+      text-shadow:0 5px 25px rgba(0,0,0,.65);
+    }
+    .tagline {
+      margin:22px 0 0;
+      font-size:18px; color:#ddd; letter-spacing:2px; text-transform:uppercase;
+    }
+    .section { max-width:1100px; margin:auto; padding:90px 22px; }
+    .section h2 {
+      font-size:38px; margin:0 0 12px; text-transform:uppercase;
+      letter-spacing:2px;
+    }
+    .rule { width:70px; height:3px; background:var(--accent); margin:0 0 35px; }
+    .about { color:#c8c8c8; max-width:760px; font-size:18px; }
+    .photo {
+      width:100%; display:block; border-radius:3px;
+      border:1px solid var(--line);
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    .caption { color:#888; font-size:13px; margin-top:10px; }
+    .video-box {
+      background:var(--panel); border:1px solid var(--line);
+      padding:45px 25px; text-align:center; color:#888;
+    }
+    .contact {
+      background:linear-gradient(135deg,#111,#080808);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+    .contact a { color:var(--accent); }
+    footer { text-align:center; color:#666; padding:35px 20px; font-size:13px; }
+    @media (max-width:650px) {
+      .links { gap:12px; font-size:11px; }
+      .brand { letter-spacing:2px; font-size:15px; }
+      .hero-content { padding-bottom:45px; }
+      h1 { letter-spacing:-3px; }
+      .section { padding:65px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">TILTED BACK</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#band">Band</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Official Website</div>
+      <h1>Tilted<br>Back</h1>
+      <p class="tagline">Live music. Loud memories.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="eyebrow">The Story</div>
+      <h2>About Tilted Back</h2>
+      <div class="rule"></div>
+      <p class="about">
+        Welcome to the official Tilted Back website. This is the home for
+        photos, live performances, videos, and the history of the band.
+        More music and memories will be added here as the site grows.
+      </p>
+    </section>
+
+    <section class="section" id="band">
+      <div class="eyebrow">The Band</div>
+      <h2>Tilted Back</h2>
+      <div class="rule"></div>
+      <img class="photo" src="assets/tilted-back-band.jpg" alt="Tilted Back band members">
+      <div class="caption">Tilted Back — 2006</div>
+    </section>
+
+    <section class="section" id="video">
+      <div class="eyebrow">Watch</div>
+      <h2>Video</h2>
+      <div class="rule"></div>
+      <div class="video-box">
+        <p>Your Tilted Back videos will go here.</p>
+        <p>Add a YouTube or TikTok link when you're ready.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="eyebrow">Stay Connected</div>
+      <h2>Contact</h2>
+      <div class="rule"></div>
+      <p class="about">
+        For Tilted Back videos, music, history, or other information,
+        check back as the site continues to grow.
+      </p>
+      <!-- Replace the line below with your email/social links when ready. -->
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Tilted Back. All rights reserved.
+  </footer>
+
+</body>
+</html>
