@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos | Tilted Back</title>
+  <meta name="description" content="Photos from Tilted Back — live music and loud memories.">
+
+  <style>
+    :root {
+      --bg:#080808;
+      --text:#f2f2f2;
+      --accent:#d7a43a;
+      --line:#252525;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.6;
+    }
+
+    a {
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .nav {
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      z-index:10;
+      background:rgba(0,0,0,.82);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-inner {
+      max-width:1100px;
+      margin:auto;
+      padding:15px 22px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .brand {
+      font-weight:900;
+      letter-spacing:4px;
+      font-size:18px;
+    }
+
+    .links {
+      display:flex;
+      gap:25px;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+    }
+
+    .links a:hover {
+      color:var(--accent);
+    }
+
+    .page {
+      max-width:1100px;
+      margin:auto;
+      padding:150px 22px 80px;
+    }
+
+    .eyebrow {
+      color:var(--accent);
+      text-transform:uppercase;
+      letter-spacing:4px;
+      font-size:12px;
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+
+    h1 {
+      margin:0;
+      font-size:clamp(58px, 10vw, 110px);
+      line-height:.9;
+      letter-spacing:-4px;
+      font-weight:900;
+      text-transform:uppercase;
+    }
+
+    .rule {
+      width:70px;
+      height:3px;
+      background:var(--accent);
+      margin:25px 0 50px;
+    }
+
+    .gallery {
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:30px;
+    }
+
+    .photo {
+      width:100%;
+      display:block;
+      border:1px solid var(--line);
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+      transition:transform .25s ease, opacity .25s ease;
+    }
+
+    .photo:hover {
+      transform:scale(1.015);
+      opacity:.92;
+    }
+
+    @media (max-width:650px) {
+      .links {
+        gap:12px;
+        font-size:11px;
+      }
+
+      .brand {
+        letter-spacing:2px;
+        font-size:15px;
+      }
+
+      .page {
+        padding:125px 18px 60px;
+      }
+
+      h1 {
+        letter-spacing:-3px;
+      }
+
+      .gallery {
+        grid-template-columns:1fr;
+        gap:25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">TILTED BACK</a>
+
+      <div class="links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#band">Band</a>
+        <a href="photos.html">Photos</a>
+        <a href="index.html#video">Video</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <div class="eyebrow">The Archive</div>
+
+    <h1>Photos</h1>
+
+    <div class="rule"></div>
+
+    <div class="gallery">
+
+      <a href="tilted-back-band.jpg" target="_blank">
+        <img
+          class="photo"
+          src="tilted-back-band.jpg"
+          alt="Tilted Back band photo from 2006">
+      </a>
+
+      <a href="tilted-back-live.jpg" target="_blank">
+        <img
+          class="photo"
+          src="tilted-back-live.jpg"
+          alt="Tilted Back performing live in 2005">
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
