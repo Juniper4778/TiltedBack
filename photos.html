@@ -99,10 +99,16 @@
     }
 
     .gallery {
-      display:grid;
-      grid-template-columns:repeat(2, 1fr);
-      gap:30px;
-    }
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:30px;
+}
+
+.gallery-column {
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
 
    .photo {
   width:100%;
@@ -172,25 +178,36 @@
 
     <div class="gallery">
 
-     <a href="tilted-back-live.jpg" target="_blank">
-  <img
-    class="photo"
-    src="tilted-back-live.jpg"
-    alt="Tilted Back performing live in 2005">
-</a>
-<a href="caf96e66-df27-4986-a3fc-bda1a00abae0.jpg" target="_blank">
-  <img
-    class="photo"
-    src="caf96e66-df27-4986-a3fc-bda1a00abae0.jpg"
-    alt="Tilted Back performing live on March 18, 2005">
-</a>
-<a href="tilted-back-band.jpg" target="_blank">
-  <img
-    class="photo"
-    src="tilted-back-band.jpg"
-    alt="Tilted Back band photo from 2006">
-</a>
-    </div>
+  <div class="gallery-column">
+
+    <a href="tilted-back-live.jpg" target="_blank">
+      <img
+        class="photo"
+        src="tilted-back-live.jpg"
+        alt="Tilted Back performing live in 2005">
+    </a>
+
+    <a href="caf96e66-df27-4986-a3fc-bda1a00abae0.jpg" target="_blank">
+      <img
+        class="photo"
+        src="caf96e66-df27-4986-a3fc-bda1a00abae0.jpg"
+        alt="Tilted Back performing live on March 18, 2005">
+    </a>
+
+  </div>
+
+  <div class="gallery-column">
+
+    <a href="tilted-back-band.jpg" target="_blank">
+      <img
+        class="photo"
+        src="tilted-back-band.jpg"
+        alt="Tilted Back band photo from 2006">
+    </a>
+
+  </div>
+
+</div>
 
   </main>
 
