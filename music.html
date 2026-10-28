@@ -74,11 +74,17 @@
       font-weight: bold;
     }
 
-    h1 {
-      font-size: clamp(36px, 6vw, 58px);
-      line-height: 1.1;
-      margin: 12px 0;
-    }
+   h1.music-title {
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.1;
+  margin: 12px 0;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(110deg, #e3e8ee 15%, #8bbde8 50%, #dce5ed 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
     h2 { font-size: 30px; margin: 0 0 8px; }
 
@@ -164,7 +170,7 @@
 <main>
   <section class="intro">
     <div class="eyebrow">The Music</div>
-    <h1>Two Lineups.<br>One Band.</h1>
+    <h1 class="music-title">The Music</h1>
     <p>Explore the music and recordings of Tilted Back.</p>
   </section>
 
