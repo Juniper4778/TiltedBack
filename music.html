@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilted Back | Music</title>
+  <style>
+    :root {
+      --bg: #080808;
+      --panel: #111111;
+      --text: #f2f2f2;
+      --muted: #aaa;
+      --accent: #d7a43a;
+      --line: #252525;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 6%;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand {
+      color: var(--accent);
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    main {
+      width: 88%;
+      max-width: 1100px;
+      margin: 60px auto;
+    }
+
+    .intro { text-align: center; margin-bottom: 55px; }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.1;
+      margin: 12px 0;
+    }
+
+    h2 { font-size: 30px; margin: 0 0 8px; }
+
+    .intro p, .description { color: var(--muted); }
+
+    .lineup {
+      padding: 35px;
+      margin: 35px 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    .lineup-label {
+      color: var(--accent);
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .cds {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin: 25px 0;
+    }
+
+    .cds img {
+      width: 100%;
+      max-width: 330px;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #333;
+      box-shadow: 0 15px 35px rgba(0,0,0,.4);
+    }
+
+    .cd-caption {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .sample {
+      margin-top: 30px;
+      padding-top: 25px;
+      border-top: 1px solid var(--line);
+    }
+
+    .sample h3 { margin: 0 0 10px; }
+
+    audio { width: 100%; margin: 10px 0; }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; gap: 14px; }
+      main { width: 92%; margin: 35px auto; }
+      .lineup { padding: 20px; }
+      .cds { gap: 12px; }
+      h2 { font-size: 25px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="index.html">TILTED BACK</a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="photos.html">PHOTOS</a>
+    <a href="video.html">VIDEO</a>
+    <a href="music.html">MUSIC</a>
+  </nav>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="eyebrow">The Music</div>
+    <h1>Two Lineups.<br>One Band.</h1>
+    <p>Explore the music and recordings of Tilted Back.</p>
+  </section>
+
+  <section class="lineup">
+    <div class="lineup-label">MARK I</div>
+    <h2>The Original Lineup</h2>
+    <p class="description">The first chapter of Tilted Back.</p>
+
+    <div class="cds">
+      <div>
+        <img src="mark-i-front.jpg" alt="Tilted Back Mark I CD front cover">
+        <div class="cd-caption">CD Front Cover</div>
+      </div>
+      <div>
+        <img src="mark-i-back.png" alt="Tilted Back Mark I CD back cover">
+        <div class="cd-caption">CD Back Cover</div>
+      </div>
+    </div>
+
+    <div class="sample">
+      <h3>Song Sample</h3>
+      <p class="description">Listen to a sample from the Mark I recordings.</p>
+      <audio controls preload="metadata">
+        <source src="Workin Class Blues.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+      </audio>
+      <div><strong>Workin Class Blues</strong></div>
+    </div>
+  </section>
+
+  <section class="lineup">
+    <div class="lineup-label">MARK II</div>
+    <h2>The Second Lineup</h2>
+    <p class="description">A new chapter in the Tilted Back story.</p>
+
+    <div class="cds">
+      <div>
+        <img src="mark-ii-front.jpg" alt="Tilted Back Mark II CD front cover">
+        <div class="cd-caption">CD Front Cover</div>
+      </div>
+      <div>
+        <img src="mark-ii-back.jpg" alt="Tilted Back Mark II CD back cover">
+        <div class="cd-caption">CD Back Cover</div>
+      </div>
+    </div>
+
+    <div class="sample">
+      <h3>Song Sample</h3>
+      <p class="description">Listen to a sample from the Mark II recordings.</p>
+      <audio controls preload="metadata">
+        <source src="Around The World.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+      </audio>
+      <div><strong>Around The World</strong></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Tilted Back. All rights reserved.
+</footer>
+
+</body>
+</html>
