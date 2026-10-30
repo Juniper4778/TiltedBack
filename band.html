@@ -21,43 +21,42 @@
       font-weight: normal;
       letter-spacing: -2px;
     }
- nav {
-  background: #080808;
-  border-bottom: 1px solid #222;
-  font-family: Arial, sans-serif;
+ .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0,0,0,.82);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
 .nav-inner {
-  max-width: 1150px;
+  max-width: 1100px;
   margin: auto;
-  padding: 20px 24px;
+  padding: 15px 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .brand {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 4px;
+  font-size: 18px;
 }
 
 .links {
   display: flex;
-  gap: 28px;
-}
-
-.links a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 1px;
+  gap: 25px;
+  font-size: 13px;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .links a:hover {
-  color: #d6ad45;
+  color: var(--accent);
 }
   </style>
 </head>
@@ -68,7 +67,7 @@
     <div class="nav-inner">
       <a class="brand" href="#">TILTED BACK</a>
       <div class="links">
-        <a href="#about">About</a>
+       <a href="index.html#about">About</a>
       <a href="band.html">Band</a>
         <a href="photos.html">Photos</a>
         <a href="video.html">Video</a>
